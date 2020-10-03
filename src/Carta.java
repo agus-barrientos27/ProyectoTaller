@@ -1,9 +1,12 @@
 
-public class Carta {
+public abstract class Carta {
 	
+	protected static int[] numero = { 12, 11};
 	private String nombre;
 	private int fuerza;
 	private String descripcion;
+	
+	public abstract int getNumero();
 	
 	public String getNombre() {
 		return nombre;
